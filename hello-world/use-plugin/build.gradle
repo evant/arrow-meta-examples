@@ -25,6 +25,10 @@ dependencies {
 
     // To run :create-plugin:shadowJar when building this project
     api project(path: ':create-plugin', configuration: 'shadow')
+
+    testImplementation "org.jetbrains.kotlin:kotlin-test"
+    testImplementation "org.jetbrains.kotlin:kotlin-test-junit"
+    testImplementation 'org.jetbrains.kotlin:kotlin-reflect'
 }
 
 compileKotlin {
